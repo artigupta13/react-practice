@@ -2,12 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import EventsInList from './EventsInList';
+import { Parent } from './ChildToParentProps';
+import UseRef from './UseRef';
+import RefDemo from './RefDemo';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <EventsInList />
+    <UseRef/>
+    <Parent/>
+    <RefDemo/>
   </React.StrictMode>
 );
 

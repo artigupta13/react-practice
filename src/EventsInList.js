@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 import './App.css';
 import { useState } from 'react';
-const Button = styled.button`
+export const Button = styled.button`
   &:focus {
     outline: 2px solid red;
     background-color: yellow;
@@ -27,6 +27,7 @@ function EventsInList() {
   }
   return (
     <div className="App">
+    <h1> List Key example</h1>
     <ul>{myarray.map((element,index) => <Button className="style_button" key={index} 
     onClick={(e)=> handleMe(e,index)}>{element}</Button>)}</ul>
     </div>
