@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+
+#eb1 {
+  padding: 20px;
+  background-color: yellow;
+}
+
+#eb2 {
+  padding: 20px;
+  background-color: green;
+  width: max-content;
+}
+

@@ -5,6 +5,7 @@ import EventsInList from './EventsInList';
 import { Parent } from './ChildToParentProps';
 import UseRef from './UseRef';
 import RefDemo from './RefDemo';
+import EventBubbling from './EventBubbling';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,6 +15,7 @@ root.render(
     <UseRef/>
     <Parent/>
     <RefDemo/>
+    <EventBubbling/>
   </React.StrictMode>
 );
 
