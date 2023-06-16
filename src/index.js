@@ -7,6 +7,8 @@ import UseRef from './UseRef';
 import RefDemo from './RefDemo';
 import EventBubbling from './EventBubbling';
 import reportWebVitals from './reportWebVitals';
+import AppendList from './AppendList';
+import UpdateDictionary from './UpdateDictionary';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +18,8 @@ root.render(
     <Parent/>
     <RefDemo/>
     <EventBubbling/>
+    <AppendList/>
+    <UpdateDictionary/>
   </React.StrictMode>
 );
 

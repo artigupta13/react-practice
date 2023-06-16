@@ -18,7 +18,10 @@ function EventBubbling() {
   return (
     <div className="App">
       <div onClick={handleDiv} id="eb1">
-        <h1 onClick={handleH1}> Event Bubbling - click button and check console logs</h1>
+        <h1 onClick={handleH1}>
+          {" "}
+          Event Bubbling - click button and check console logs
+        </h1>
         <span onClick={handleSpan} id="eb2">
           <button id="eb3" onClick={handleButton}>
             {" "}

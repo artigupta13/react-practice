@@ -49,3 +49,10 @@
   width: max-content;
 }
 
+
+#b1 {
+  width: 100px;
+  color: white;
+  height: 50px;
+  background-color: green;
+}
