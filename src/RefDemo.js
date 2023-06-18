@@ -7,7 +7,7 @@ function RefDemo() {
   }
   return (
     <div className="App">
-      <h1>use of createRef</h1>
+      <h3>use of createRef</h3>
       <form onSubmit={HandleSubmit}>
         <input type="text" ref={inputValue} />
         <button type="submit">submit</button>

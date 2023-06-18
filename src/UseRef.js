@@ -10,13 +10,13 @@ function UseRef() {
   });
   return (
     <div className="App">
-      <h1>useRef Example</h1>
+      <h3>useRef Example</h3>
       <input
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
-      <h2> I have been rendered {renderCount.current} times</h2>
+      <h3> I have been rendered {renderCount.current} times</h3>
     </div>
   );
 }

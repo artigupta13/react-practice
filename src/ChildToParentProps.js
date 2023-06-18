@@ -15,7 +15,7 @@ export function Parent() {
   const [count, setCount] = useState(0);
   return (
     <div className="App">
-      <h1>How to pass props from child to Parent</h1>
+      <h3>Pass props from child to Parent</h3>
       <p>Parent</p>
       <p>count: {count}</p>
       <Child setCount={setCount} />

@@ -25,6 +25,7 @@ function SelectPractice() {
   });
   return (
     <div className="App">
+      <h3> Select Practice</h3>
       <select
         onChange={(e) => {
           console.log(e.target.value);

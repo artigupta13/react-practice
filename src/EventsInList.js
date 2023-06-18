@@ -6,8 +6,8 @@ export const Button = styled.button`
     outline: 2px solid red;
     background-color: yellow;
   }
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 `;
 
 function EventsInList() {
@@ -25,7 +25,7 @@ function EventsInList() {
   }
   return (
     <div className="App">
-      <h1> List Key example</h1>
+      <h3> List Key example</h3>
       <ul>
         {myarray.map((element, index) => (
           <Button

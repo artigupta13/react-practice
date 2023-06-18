@@ -1,27 +1,60 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import EventsInList from './EventsInList';
-import { Parent } from './ChildToParentProps';
-import UseRef from './UseRef';
-import RefDemo from './RefDemo';
-import EventBubbling from './EventBubbling';
-import reportWebVitals from './reportWebVitals';
-import AppendList from './AppendList';
-import UpdateDictionary from './UpdateDictionary';
-import SelectPractice from './SelectPractice';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import EventsInList from "./EventsInList";
+import { Parent } from "./ChildToParentProps";
+import UseRef from "./UseRef";
+import RefDemo from "./RefDemo";
+import EventBubbling from "./EventBubbling";
+import reportWebVitals from "./reportWebVitals";
+import AppendList from "./AppendList";
+import UpdateDictionary from "./UpdateDictionary";
+import SelectPractice from "./SelectPractice";
+import ArrayRotation from "./ArrayRotation";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <EventsInList />
-    <UseRef/>
-    <Parent/>
-    <RefDemo/>
-    <EventBubbling/>
-    <AppendList/>
-    <UpdateDictionary/>
-    <SelectPractice/>
+    <table className="main_table">
+      <tr>
+        <td>
+          <EventsInList />
+        </td>
+        <td>
+          <UseRef />
+        </td>
+        <td>
+          {" "}
+          <Parent />
+        </td>
+        <td>
+          {" "}
+          <RefDemo />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          {" "}
+          <AppendList />
+        </td>
+        <td>
+          {" "}
+          <UpdateDictionary />
+        </td>
+        <td>
+          <SelectPractice />
+        </td>
+        <td>
+          {" "}
+          <ArrayRotation />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <EventBubbling />
+        </td>
+      </tr>
+    </table>
   </React.StrictMode>
 );
 

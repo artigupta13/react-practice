@@ -46,7 +46,6 @@
 #eb2 {
   padding: 20px;
   background-color: green;
-  width: max-content;
 }
 
 
@@ -55,4 +54,20 @@
   color: white;
   height: 50px;
   background-color: green;
+}
+
+
+.main_table {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td{
+  border: 1px solid;
+  width: 200px;
+  height: 200px;
+  overflow-y: scroll;
 }

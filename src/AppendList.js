@@ -11,19 +11,16 @@ function AppendList() {
 
   return (
     <div className="App">
-      <br />
-      <br />
-      <br />
-      <br />
+      <h3> Append Element</h3>
       <button id="b1" onClick={handleMe}>
         {" "}
         add items
       </button>
-      <h1>
+      <h4>
         {arr.map((a, index) => (
-          <span key={index}> {a},</span>
+          <button key={index}> {a}</button>
         ))}
-      </h1>
+      </h4>
     </div>
   );
 }
