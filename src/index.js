@@ -9,6 +9,7 @@ import EventBubbling from './EventBubbling';
 import reportWebVitals from './reportWebVitals';
 import AppendList from './AppendList';
 import UpdateDictionary from './UpdateDictionary';
+import SelectPractice from './SelectPractice';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +21,7 @@ root.render(
     <EventBubbling/>
     <AppendList/>
     <UpdateDictionary/>
+    <SelectPractice/>
   </React.StrictMode>
 );
 
