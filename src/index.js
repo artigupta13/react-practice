@@ -11,6 +11,7 @@ import AppendList from "./AppendList";
 import UpdateDictionary from "./UpdateDictionary";
 import SelectPractice from "./SelectPractice";
 import ArrayRotation from "./ArrayRotation";
+import ContextPractice from "./ContextPractice";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -52,6 +53,9 @@ root.render(
       <tr>
         <td>
           <EventBubbling />
+        </td>
+        <td>
+          <ContextPractice/>
         </td>
       </tr>
     </table>

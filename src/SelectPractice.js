@@ -15,14 +15,10 @@ function SelectPractice() {
     {
       name: "Bangladesh",
       value: "BS",
-      cities: ["Dhka", "Chittagong"],
+      cities: ["Dhaka", "Chittagong"],
     },
   ];
-  const [country, setCountry] = useState({
-    name: "",
-    value: "",
-    cities: ["None"],
-  });
+  const [country, setCountry] = useState(countires[0]);
   return (
     <div className="App">
       <h3> Select Practice</h3>
