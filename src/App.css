@@ -71,3 +71,11 @@ td{
   height: 200px;
   overflow-y: scroll;
 }
+
+.dot {
+  height: 70px;
+  width: 70px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+}
