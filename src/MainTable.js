@@ -11,15 +11,16 @@ import ContextPractice from "./ContextPractice";
 import CountDown from "./CountDown";
 import ReduxExample from "./ReduxExample";
 import FormExample from "./FormExample";
-import LineChart from "./LineChart";
+import UseReducerDemo from "./UseReducerDemo";
 import RenderProps from "./RenderProps";
 import Memo from "./Memo";
+import UseEffectDemo from "./UseEffectDemo";
 import InitializerFunction from "./InitializerFunction";
 
-export default function MainTable(){
-    return(
+export default function MainTable() {
+  return (
     <div>
-        <table className="main_table">
+      <table className="main_table">
         <tr>
           <td>
             <EventsInList />
@@ -68,12 +69,28 @@ export default function MainTable(){
           </td>
         </tr>
         <tr>
-          <td><FormExample/></td>
-          <td><InitializerFunction/></td>
-          <td><RenderProps/></td>
-          <td><Memo/></td>
+          <td>
+            <FormExample />
+          </td>
+          <td>
+            <InitializerFunction />
+          </td>
+          <td>
+            <RenderProps />
+          </td>
+          <td>
+            <Memo />
+          </td>
         </tr>
-      </table> 
+        <tr>
+          <td>
+            <UseEffectDemo />
+          </td>
+          <td>
+            <UseReducerDemo />
+          </td>
+        </tr>
+      </table>
     </div>
-    )
+  );
 }

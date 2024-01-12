@@ -9,6 +9,10 @@ function Memo() {
     const incrementMe = ()=>{
         setCount(pre=> pre+1);
     }
+
+    const decrementMe = ()=>{
+      setData(pre=> [...pre, "data3"]);
+  }
   return (
     <div className="App">
      <h3>React Memo</h3>
