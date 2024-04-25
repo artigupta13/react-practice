@@ -16,6 +16,7 @@ import RenderProps from "./RenderProps";
 import Memo from "./Memo";
 import UseEffectDemo from "./UseEffectDemo";
 import InitializerFunction from "./InitializerFunction";
+import PokemonApiComponent from "./PokemonApiComponent";
 
 export default function MainTable() {
   return (
@@ -88,6 +89,9 @@ export default function MainTable() {
           </td>
           <td>
             <UseReducerDemo />
+          </td>
+          <td>
+            <PokemonApiComponent />
           </td>
         </tr>
       </table>

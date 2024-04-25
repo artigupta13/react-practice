@@ -1,10 +1,11 @@
 import React from "react";
 import { Provider } from "react-redux";
-import store from "./app/store";
+import { store } from "./app/store";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import reportWebVitals from "./reportWebVitals";
-import MainTable from "./MainTable";
+import "./App.css";
+import reportWebVitals from "./components/reportWebVitals";
+import MainTable from "./components/MainTable";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

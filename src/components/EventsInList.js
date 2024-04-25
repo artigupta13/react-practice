@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-import "./App.css";
 import { useState } from "react";
 export const Button = styled.button`
   &:focus {
