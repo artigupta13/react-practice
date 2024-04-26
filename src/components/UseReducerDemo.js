@@ -14,6 +14,9 @@
 // console.log(array1.reduce(reducer,5));
 
 import React, { useReducer } from "react";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import Stack from "react-bootstrap/Stack";
 
 function UseReducerDemo() {
   const intialValue = 0;
@@ -33,19 +36,21 @@ function UseReducerDemo() {
 
   const [newState, dispatch] = useReducer(reducer, intialValue);
   return (
-    <div className="App">
-      <h3>UseReducerDemo</h3>
-      <h4>Count:{newState}</h4>
-      <button id="b1" onClick={() => dispatch("increment")}>
-        Increment
-      </button>
-      <button id="b1" onClick={() => dispatch("decrement")}>
-        Decrement
-      </button>
-      <button id="b1" onClick={() => dispatch("reset")}>
-        Reset
-      </button>
-    </div>
+    <Card className="custom-card">
+      <Card.Body>
+        <Card.Title>UseReducerDemo</Card.Title>
+        <h4>Count:{newState}</h4>
+        <Button id="b1" onClick={() => dispatch("increment")}>
+          Increment
+        </Button>
+        <Button id="b1" onClick={() => dispatch("decrement")}>
+          Decrement
+        </Button>
+        <Button id="b1" onClick={() => dispatch("reset")}>
+          Reset
+        </Button>
+      </Card.Body>
+    </Card>
   );
 }
 

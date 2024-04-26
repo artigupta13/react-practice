@@ -17,84 +17,108 @@ import Memo from "./Memo";
 import UseEffectDemo from "./UseEffectDemo";
 import InitializerFunction from "./InitializerFunction";
 import PokemonApiComponent from "./PokemonApiComponent";
+import PassStateToBootstrapComponent from "./PassStateToBootstrapComponent";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export default function MainTable() {
   return (
-    <div>
-      <table className="main_table">
-        <tr>
-          <td>
-            <EventsInList />
-          </td>
-          <td>
-            <UseRef />
-          </td>
-          <td>
-            {" "}
-            <Parent />
-          </td>
-          <td>
-            {" "}
-            <RefDemo />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            {" "}
-            <AppendList />
-          </td>
-          <td>
-            {" "}
-            <UpdateDictionary />
-          </td>
-          <td>
-            <SelectPractice />
-          </td>
-          <td>
-            {" "}
-            <ArrayRotation />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <EventBubbling />
-          </td>
-          <td>
-            <ContextPractice />
-          </td>
-          <td>
-            <CountDown />
-          </td>
-          <td>
-            <ReduxExample />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <FormExample />
-          </td>
-          <td>
-            <InitializerFunction />
-          </td>
-          <td>
-            <RenderProps />
-          </td>
-          <td>
-            <Memo />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <UseEffectDemo />
-          </td>
-          <td>
-            <UseReducerDemo />
-          </td>
-          <td>
-            <PokemonApiComponent />
-          </td>
-        </tr>
-      </table>
-    </div>
+    <Container>
+      <Row className="justify-content-md-center">
+        <Col>
+          {" "}
+          <EventsInList />
+        </Col>
+        <Col>
+          {" "}
+          <UseRef />
+        </Col>
+        <Col>
+          {" "}
+          <Parent />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          {" "}
+          <RefDemo />
+        </Col>
+        <Col>
+          {" "}
+          <AppendList />
+        </Col>
+        <Col>
+          {" "}
+          <UpdateDictionary />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          {" "}
+          <SelectPractice />
+        </Col>
+        <Col>
+          {" "}
+          <ArrayRotation />
+        </Col>
+        <Col>
+          {" "}
+          <EventBubbling />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          {" "}
+          <ContextPractice />
+        </Col>
+        <Col>
+          {" "}
+          <CountDown />
+        </Col>
+        <Col>
+          {" "}
+          <ReduxExample />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          {" "}
+          <FormExample />
+        </Col>
+        <Col>
+          {" "}
+          <InitializerFunction />
+        </Col>
+        <Col>
+          {" "}
+          <RenderProps />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          {" "}
+          <Memo />
+        </Col>
+        <Col>
+          {" "}
+          <UseEffectDemo />
+        </Col>
+        <Col>
+          {" "}
+          <UseReducerDemo />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          {" "}
+          <PokemonApiComponent />
+        </Col>
+        <Col>
+          {" "}
+          <PassStateToBootstrapComponent />
+        </Col>
+      </Row>
+    </Container>
   );
 }

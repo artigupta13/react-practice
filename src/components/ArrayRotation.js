@@ -1,4 +1,8 @@
 import { useState } from "react";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import Stack from "react-bootstrap/Stack";
+
 function ArrayRotation() {
   const [myList, setMyList] = useState([1, 2, 3, 4, 5, 6]);
   const leftRotate = () => {
@@ -15,20 +19,27 @@ function ArrayRotation() {
   };
 
   return (
-    <div className="App">
-      <h3> Array Rotation </h3>
-      {myList.map((element, index) => (
-        <button key={element}> {element}</button>
-      ))}
-      <br />
-      <br />
-      <button id="b1" onClick={leftRotate}>
-        Left Rotate
-      </button>
-      <button id="b1" onClick={rightRotate}>
-        Right Rotate
-      </button>
-    </div>
+    <Card className="custom-card">
+      <Card.Body>
+        <Card.Title> Array Rotation </Card.Title>
+        {myList.map((element, index) => (
+          <Button variant="outline-danger" key={element}>
+            {" "}
+            {element}
+          </Button>
+        ))}
+        <br />
+        <br />
+        <Stack direction="horizontal" gap={1}>
+          <Button id="b1" onClick={leftRotate}>
+            Left Rotate
+          </Button>
+          <Button id="b1" onClick={rightRotate}>
+            Right Rotate
+          </Button>
+        </Stack>
+      </Card.Body>
+    </Card>
   );
 }
 

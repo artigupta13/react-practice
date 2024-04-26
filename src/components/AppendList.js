@@ -1,4 +1,8 @@
 import { useState } from "react";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import Stack from "react-bootstrap/Stack";
+
 function AppendList() {
   const [arr, setArr] = useState(["thing1", "thing2", "thing3"]);
 
@@ -10,18 +14,26 @@ function AppendList() {
   };
 
   return (
-    <div className="App">
-      <h3> Append Element</h3>
-      <button id="b1" onClick={handleMe}>
-        {" "}
-        add items
-      </button>
-      <h4>
-        {arr.map((a, index) => (
-          <button key={index}> {a}</button>
-        ))}
-      </h4>
-    </div>
+    <Card className="custom-card">
+      <Card.Body>
+        <Card.Title>Append Element</Card.Title>
+        <Stack direction="vertical" gap={1}>
+          <Button variant="outline-warning" onClick={handleMe}>
+            add items
+          </Button>
+          <Card.Text>
+            <Stack direction="horizontal" gap={1}>
+              {arr.map((a, index) => (
+                <Button variant="outline-success" key={index}>
+                  {" "}
+                  {a}
+                </Button>
+              ))}
+            </Stack>
+          </Card.Text>
+        </Stack>
+      </Card.Body>
+    </Card>
   );
 }
 

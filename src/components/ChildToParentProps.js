@@ -1,24 +1,38 @@
 import { useState } from "react";
-import { Button } from "./EventsInList";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import Stack from "react-bootstrap/Stack";
 export function Child({ setCount }) {
   return (
-    <div className="App">
+    <Card.Text>
       <p>Child</p>
-      <Button onClick={() => setCount(1)}>1</Button>
-      <Button onClick={() => setCount(2)}>2</Button>
-      <Button onClick={() => setCount(3)}>3</Button>
-    </div>
+      <Stack direction="horizontal" gap="1">
+        <Button varient="outline-primary" onClick={() => setCount(1)}>
+          1
+        </Button>
+        <Button varient="outline-primary" onClick={() => setCount(2)}>
+          2
+        </Button>
+        <Button varient="outline-primary" onClick={() => setCount(3)}>
+          3
+        </Button>
+      </Stack>
+    </Card.Text>
   );
 }
 
 export function Parent() {
   const [count, setCount] = useState(0);
   return (
-    <div className="App">
-      <h3>Pass props from child to Parent</h3>
-      <p>Parent</p>
-      <p>count: {count}</p>
-      <Child setCount={setCount} />
-    </div>
+    <Card className="custom-card">
+      <Card.Body>
+        <Card.Title>Pass props from child to Parent</Card.Title>
+        <Card.Text>
+          <p>Parent</p>
+          <p>count: {count}</p>
+          <Child setCount={setCount} />
+        </Card.Text>
+      </Card.Body>
+    </Card>
   );
 }

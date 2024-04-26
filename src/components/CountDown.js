@@ -1,4 +1,8 @@
 import { useState } from "react";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import Stack from "react-bootstrap/Stack";
+
 function CountDown() {
   const [count, setCount] = useState(0);
   const [timer, setTimer] = useState(0);
@@ -16,23 +20,20 @@ function CountDown() {
   };
 
   return (
-    <div className="App">
-      <h3> setInterval example</h3>
-      <button id="b1" onClick={startCountdown}>
-        {" "}
-        Start me
-      </button>
-      <button id="b1" onClick={stopCountdown}>
-        {" "}
-        Stop me
-      </button>
-      <br /> <br /> <br />
-      <div className="dot">
-        <strong style={{ top: "20px", left: "0px", position: "relative" }}>
-          {count}
-        </strong>
-      </div>
-    </div>
+    <Card className="custom-card">
+      <Card.Body>
+        <Card.Title> setInterval example</Card.Title>
+        <Stack direction="horizontal" gap={3}>
+          <Button id="bt1" onClick={startCountdown}>
+            Start me
+          </Button>
+          <Button id="bt2" onClick={stopCountdown}>
+            Stop me
+          </Button>
+          <strong>{count}</strong>
+        </Stack>
+      </Card.Body>
+    </Card>
   );
 }
 

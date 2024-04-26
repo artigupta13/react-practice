@@ -1,13 +1,7 @@
-import { styled } from "styled-components";
 import { useState } from "react";
-export const Button = styled.button`
-  &:focus {
-    outline: 2px solid red;
-    background-color: yellow;
-  }
-  height: 50px;
-  width: 50px;
-`;
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import Stack from "react-bootstrap/Stack";
 
 function EventsInList() {
   const [myarray, setmyarray] = useState([1, 2, 3, 4, 5, 6]);
@@ -23,20 +17,24 @@ function EventsInList() {
     setmyarray(temp);
   }
   return (
-    <div className="App">
-      <h3> List Key example</h3>
-      <ul>
-        {myarray.map((element, index) => (
-          <Button
-            className="style_button"
-            key={index}
-            onClick={(e) => handleMe(e, index)}
-          >
-            {element}
-          </Button>
-        ))}
-      </ul>
-    </div>
+    <Card className="custom-card">
+      <Card.Body>
+        <Card.Title>List Key example</Card.Title>
+        <Card.Text>
+          <Stack direction="horizontal" gap="1">
+            {myarray.map((element, index) => (
+              <Button
+                variant="warning"
+                key={index}
+                onClick={(e) => handleMe(e, index)}
+              >
+                {element}
+              </Button>
+            ))}
+          </Stack>
+        </Card.Text>
+      </Card.Body>
+    </Card>
   );
 }
 

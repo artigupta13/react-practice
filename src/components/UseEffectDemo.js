@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import Stack from "react-bootstrap/Stack";
+
 function UseEffectDemo() {
   const [post, setPost] = useState({});
   const [id, setId] = useState(1);
@@ -17,13 +21,15 @@ function UseEffectDemo() {
   }, [id]);
 
   return (
-    <div className="App">
-      <h3>UseEffectDemo</h3>
-      <input type="text" value={id} onChange={(e) => setId(e.target.value)} />
-      <p>
-        {post.title},{post.body}
-      </p>
-    </div>
+    <Card className="custom-card">
+      <Card.Body>
+        <Card.Title>UseEffectDemo</Card.Title>
+        <input type="text" value={id} onChange={(e) => setId(e.target.value)} />
+        <p>
+          {post.title},{post.body}
+        </p>
+      </Card.Body>
+    </Card>
   );
 }
 

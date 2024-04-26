@@ -1,29 +1,43 @@
-import { useState } from 'react';
-export default function FormExample(){
-    const [ form, setForm ] = useState({
-        firstName: 'Barbara',
-        lastName: 'Hepworth',
-        email: 'bhepworth@sculpture.com',
-    })
-    return(
-        <div className='App'>
-        <label>First Name:  
-        <input type="text" key="1" value={form.firstName} onChange={(e)=> setForm({ ...form, firstName : e.target.value}) }/>
-        </label> 
-        <br/>
-        <label>Last Name:
-        <input type="text" key="2" value={form.lastName} onChange={(e) => setForm({ ...form, lastName: e.target.value})}/>
-        </label> 
-        <br/> 
-        <label>Email:
-        <input type="text" key= "3" value={form.email} onChange={(e)=> setForm({ ...form, email: e.target.value})}/>
-        </label>  
-        <br/>
+import { useState } from "react";
+import Card from "react-bootstrap/Card";
+import Form from "react-bootstrap/Form";
+
+export default function FormExample() {
+  const [form, setForm] = useState({
+    firstName: "Barbara",
+    lastName: "Hepworth",
+    email: "bhepworth@sculpture.com",
+  });
+  return (
+    <Card className="custom-card">
+      <Card.Body>
+        <Card.Title> Form Handling</Card.Title>
+        <Form.Label htmlFor="firstname">First Name</Form.Label>
+        <Form.Control
+          type="text"
+          key="1"
+          value={form.firstName}
+          onChange={(e) => setForm({ ...form, firstName: e.target.value })}
+        />
+        <Form.Label htmlFor="lastname">Last Name</Form.Label>
+        <Form.Control
+          type="text"
+          key="2"
+          value={form.lastName}
+          onChange={(e) => setForm({ ...form, lastName: e.target.value })}
+        />
+        <Form.Label htmlFor="email">Email</Form.Label>
+        <Form.Control
+          type="text"
+          key="3"
+          value={form.email}
+          onChange={(e) => setForm({ ...form, email: e.target.value })}
+        />
+
         <strong>
-        {form.firstName}{' '}
-        {form.lastName}{' '}
-        {form.email}{' '}
+          {form.firstName} {form.lastName} {form.email}{" "}
         </strong>
-        </div>
-    )
+      </Card.Body>
+    </Card>
+  );
 }

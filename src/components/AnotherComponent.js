@@ -5,7 +5,7 @@ function AnotherComponent({ data }) {
   return (
     <div>
       {data.map((d, index) => {
-        return <h5 key={index}>{d}</h5>;
+        return <h6 key={index}>{d}</h6>;
       })}
     </div>
   );

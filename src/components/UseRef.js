@@ -1,23 +1,35 @@
 import { useState, useEffect, useRef } from "react";
+import FloatingLabel from "react-bootstrap/FloatingLabel";
+import Form from "react-bootstrap/Form";
+import Card from "react-bootstrap/Card";
 
 function UseRef() {
   const [name, setName] = useState("");
-  // const [renderCount, setRenderCount ] = useState(0)
   const renderCount = useRef(0);
   useEffect(() => {
     console.log(renderCount);
     renderCount.current = renderCount.current + 1;
   });
   return (
-    <div className="App">
-      <h3>useRef Example</h3>
-      <input
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <h3> I have been rendered {renderCount.current} times</h3>
-    </div>
+    <Card className="custom-card">
+      <Card.Body>
+        <Card.Title>useRef Example</Card.Title>
+        <FloatingLabel
+          controlId="floatingInput"
+          label="type here"
+          className="mb-3"
+        >
+          <Form.Control
+            type="text"
+            placeholder="type here"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </FloatingLabel>
+
+        <Card.Text> I have been rendered {renderCount.current} times</Card.Text>
+      </Card.Body>
+    </Card>
   );
 }
 

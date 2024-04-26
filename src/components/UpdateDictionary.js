@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import Stack from "react-bootstrap/Stack";
+
 function UpdateDictionary() {
   const [student, setStudent] = useState({
     1: "Arti",
@@ -16,14 +20,17 @@ function UpdateDictionary() {
   }, [student]);
 
   return (
-    <div className="App">
-      <h3> Update object</h3>
-      <button id="b1" onClick={updateMe}>
-        {" "}
-        Update Object
-      </button>
-      <p>{JSON.stringify(student)}</p>
-    </div>
+    <Card className="custom-card">
+      <Card.Body>
+        <Card.Title> Update Object</Card.Title>
+
+        <Button variant="outline-warning" onClick={updateMe}>
+          {" "}
+          Update Object
+        </Button>
+        <Card.Text>{JSON.stringify(student)}</Card.Text>
+      </Card.Body>
+    </Card>
   );
 }
 
