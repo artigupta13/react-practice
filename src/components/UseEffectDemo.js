@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import Stack from "react-bootstrap/Stack";
 
 function UseEffectDemo() {
   const [post, setPost] = useState({});

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import Stack from "react-bootstrap/Stack";
 
 function UpdateDictionary() {
   const [student, setStudent] = useState({

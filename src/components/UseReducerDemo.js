@@ -16,7 +16,6 @@
 import React, { useReducer } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import Stack from "react-bootstrap/Stack";
 
 function UseReducerDemo() {
   const intialValue = 0;
