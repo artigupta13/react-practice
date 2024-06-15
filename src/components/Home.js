@@ -18,6 +18,8 @@ import UpdateDictionary from './UpdateDictionary';
 import UseReducerDemo from './UseReducerDemo';
 import UseRef from './UseRef';
 import PassStateToBootstrapComponent  from  './PassStateToBootstrapComponent';
+import ParentComponent from './UseCallBackComponent';
+import UseMemo from './UseMemo';
 
 
 const Home = () => {
@@ -47,6 +49,8 @@ const Home = () => {
         <Route path="/useReducer" element={<UseReducerDemo/>} />
         <Route path="/useRef" element={<UseRef/>} />
         <Route path="/passStateInBootStrap" element={<PassStateToBootstrapComponent/>}/>
+        <Route path="/useCallBackDemo" element={<ParentComponent/>}/>
+        <Route path="/useMemoDemo" element={<UseMemo/>}/>
         </Routes>
         </Col>
         <Col xs={4} id="page-content"></Col>

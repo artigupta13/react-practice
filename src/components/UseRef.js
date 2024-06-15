@@ -6,10 +6,12 @@ import Card from "react-bootstrap/Card";
 function UseRef() {
   const [name, setName] = useState("");
   const renderCount = useRef(0);
+
   useEffect(() => {
     console.log(renderCount);
     renderCount.current = renderCount.current + 1;
   });
+  
   return (
     <Card className="custom-card">
       <Card.Body>

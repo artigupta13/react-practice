@@ -24,7 +24,7 @@ function AppendList() {
           <Card.Text>
             <Stack direction="horizontal" gap={1}>
               {arr.map((a, index) => (
-                <Button variant="outline-success" key={index}>
+                <Button variant="warning" key={index}>
                   {" "}
                   {a}
                 </Button>

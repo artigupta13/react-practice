@@ -23,7 +23,7 @@ function ArrayRotation() {
       <Card.Body>
         <Card.Title> Array Rotation </Card.Title>
         {myList.map((element, index) => (
-          <Button variant="outline-danger" key={element}>
+          <Button variant="outline-warning" key={element}>
             {" "}
             {element}
           </Button>
@@ -31,10 +31,10 @@ function ArrayRotation() {
         <br />
         <br />
         <Stack direction="horizontal" gap={1}>
-          <Button id="b1" onClick={leftRotate}>
+          <Button variant="warning" onClick={leftRotate}>
             Left Rotate
           </Button>
-          <Button id="b1" onClick={rightRotate}>
+          <Button variant="warning" onClick={rightRotate}>
             Right Rotate
           </Button>
         </Stack>

@@ -16,6 +16,7 @@ export default function FormExample() {
         <Form.Control
           type="text"
           key="1"
+          style={{ backgroundColor: 'orange' }} 
           value={form.firstName}
           onChange={(e) => setForm({ ...form, firstName: e.target.value })}
         />
