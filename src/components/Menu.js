@@ -25,6 +25,7 @@ const Menu = () => {
           <Nav.Link href="passStateInBootStrap">Pass State to Bootstrap Component</Nav.Link>
           <Nav.Link href="useCallBackDemo">useCallBack demo</Nav.Link>
           <Nav.Link href="useMemoDemo">useMemo demo</Nav.Link>
+          <Nav.Link href="reactWindow">React Window demo</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
